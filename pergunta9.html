@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+
+    <title>Cabeça na Lua</title>
+
+</head>
+<body>
+
+    <section id="containerpergunta9">
+        <video autoplay muted loop id="background-pergunta9">
+        <source src="Imagens/Pergunta9.mp4" type="video/mp4">
+        </video>
+
+        <section class="container_botao_pergunta9">
+            <button id="botao_p9" onclick="errado()">Lua</button>
+            <button id="botao_p9" onclick="errado()">Saturno</button>
+            <button id="botao_p9" onclick="certo()">Terra</button>
+
+        </section>
+        <section>
+            <h1 class="resposta9"></h1>
+        </section>
+         <audio autoplay loop>
+        <source src="Sons/Confident Kurt - TrackTribe.mp3" type="audio/mp3">
+        </audio>
+    </section>
+
+    <script>
+        function certo(){
+            window.location.href = "pergunta10.html"
+
+        }
+        function errado(){
+            document.querySelector('h1').textContent = "VOCÊ ERROU! TENTE NOVAMENTE!"
+            document.querySelector('h1').style.backgroundColor =  "rgb(255, 0, 0)"
+            document.querySelector('h1').style.width =  "660px"
+
+
+        }
+    </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+
+    <title>Cabeça na Lua</title>
+
+</head>
+<body>
+
+    <section id="containerpergunta4">
+        <video autoplay muted loop id="background-pergunta4">
+        <source src="Imagens/Pergunta4.mp4" type="video/mp4">
+        </video>
+
+        <section class="container_botao_pergunta4">
+            <button id="botao_p" onclick="certo()">Mercúrio</button>
+            <button id="botao_p" onclick="errado()">Marte</button>
+            <button id="botao_p" onclick="errado()">Netuno</button>
+
+        </section>
+        <section>
+            <h1 class="resposta4"></h1>
+        </section>
+          <audio autoplay loop>
+        <source src="Sons/Confident Kurt - TrackTribe.mp3" type="audio/mp3">
+        </audio>
+
+
+    </section>
+
+    <script>
+        function certo(){
+            window.location.href = "transicao1.html"
+
+        }
+        function errado(){
+            document.querySelector('h1').textContent = "VOCÊ ERROU! TENTE NOVAMENTE!"
+            document.querySelector('h1').style.backgroundColor =  "rgb(255, 0, 0)"
+            document.querySelector('h1').style.width =  "660px"
+
+
+        }
+    </script>
+
+
+
+</body>
+</html>

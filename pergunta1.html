@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+
+    <title>Cabeça na Lua</title>
+
+</head>
+<body>
+
+    <section id="containerpergunta1">
+        <video autoplay muted loop id="background-pergunta1">
+        <source src="Imagens/Pergunta1.mp4" type="video/mp4">
+        </video>
+
+        <section class="container_botao_pergunta1">
+            <button id="botao_p" onclick="certo()">Sim</button>
+            <button id="botao_p" onclick="errado()">Não</button>
+        </section>
+        <section>
+            <h1 class="resposta1"></h1>
+        </section>
+        <audio autoplay loop>
+        <source src="Sons/Confident Kurt - TrackTribe.mp3" type="audio/mp3">
+        </audio>
+
+    </section>
+
+    <script>
+        function certo(){
+            window.location.href = "pergunta2.html"
+
+
+
+        }
+        function errado(){
+            document.querySelector('h1').textContent = "VOCÊ ERROU! TENTE NOVAMENTE!"
+            document.querySelector('h1').style.backgroundColor =  "rgb(255, 0, 0)"
+            document.querySelector('h1').style.width =  "660px"
+
+
+        }
+    </script>
+
+
+
+</body>
+</html>

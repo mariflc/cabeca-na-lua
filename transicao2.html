@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+
+    <title>Cabeça na Lua</title>
+
+</head>
+<body>
+
+    <section id="containertransicao2">
+        <video autoplay muted id="background-transicao2">
+        <source src="Imagens/transicao2.mp4" type="video/mp4">
+        </video>
+        <audio autoplay loop>
+        <source src="Sons/Recess - TrackTribe.mp3" type="audio/mp3">
+        </audio>
+    </section>
+
+
+    <script>
+        const video_transicao1 = document.getElementById("background-transicao2");
+        video_transicao1.addEventListener("ended", function () {
+            window.location.href = "pergunta9.html"; // Redirecionar para a próxima página
+        });
+    </script>
+
+
+
+
+</body>
+</html>
